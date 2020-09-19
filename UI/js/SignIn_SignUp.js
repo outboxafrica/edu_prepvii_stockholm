@@ -18,7 +18,6 @@ var emailArray=[];
 var passwordArray=[];
 
 function register(){
-    // alert("yoo");
     var username = document.getElementById("ru").value;
     var email = document.getElementById("re").value;
     var password = document.getElementById("rp").value;
