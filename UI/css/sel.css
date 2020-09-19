@@ -1,0 +1,41 @@
+#sel-title {
+    font-size: 25px;
+    margin-left: 10%;
+}
+#enclose {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: 28% 69%;
+    grid-template-rows: 300px;
+    grid-column-gap: 3%;
+}
+#part1 {
+    background-color: grey;
+}
+#part2 {
+    display: grid;
+    grid-template-columns: 50% 20% 30%;
+}
+#sect1 {
+    grid-column: 1 / span 3;
+    height: 250px;
+}
+.sect2 {
+    font-size: 16px;
+    height: 50px;
+}
+#buttn1 {
+    margin: 12px 25px 0 25px;
+    text-align: center;
+    padding: 5px 0% 5px 0;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+}
+#buttn2 {
+    margin: 12px 15px 0 15px;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+}
