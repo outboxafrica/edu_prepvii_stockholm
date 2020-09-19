@@ -1,3 +1,14 @@
+/* body margin and padding setting */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: lightgrey;
+  /*font-family: poppins;*/
+}
+
 /* Style the header with a grey background and some padding */
 .header {
     overflow: hidden;
@@ -105,3 +116,126 @@
   }
   
   
+  /* Grid h1, h2 Card fonts*/
+
+/*h1 { font-size: 40px;
+  color: black; 
+  font-weight: normal;
+
+}
+
+
+h2 { font-size: 40px;
+color: black; 
+font-weight: normal;
+margin-top: 48px;
+}*/
+
+
+/*Stockholm cards*/
+
+.card__list{
+  margin-bottom: 80px;
+}
+.heading{
+  text-align: center;
+  font-size: 1.9em;
+  padding: 10px;
+  margin-bottom: 50px;
+  
+}
+
+.card__row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 10px;
+  width: 15rem;
+  border-radius: 0px;
+  align-items: center;
+  border: 1px solid #ebebeb;
+  box-shadow: 5px 5px #ebebeb;
+}
+
+.card:hover {
+  display: flex;
+  flex-direction: column;
+  background-color: burlywood;
+  margin: 10px 0;
+  width: 15rem;
+  border-radius: 0px;
+  align-items: center;
+  border: 1px solid #ebebeb;
+  box-shadow: 5px 5px #ebebeb;
+}
+
+.card__image {
+  width: 15rem;
+  height: 15rem;
+  object-fit: fill;
+  border-radius: 1px 1px 0 0;
+  padding: 0 0 10px 0;
+}
+
+.card__image:hover{
+  background-color: darkorange;
+}
+
+.card__name {
+  font-weight: 530;
+  font-size: 1.2rem;
+  padding: 7px 0;
+}
+
+.card__price {
+  font-style: italic;
+  font-weight: 400px;
+}
+
+
+.card .comment-button{
+  text-align: center;
+  padding: 14px;
+}
+
+.card .comment-button button{
+  padding: 5px;
+  background-color: green;
+  outline: none;
+  border: 1px solid #3489d1;
+  font-size: 12px;
+  color: #ebebeb;
+  cursor: pointer;
+}
+
+.card .comment-button button:hover{
+  background-color: #3489d1;
+}
+
+
+.card .card-button{
+  text-align: center;
+  padding: 20px;
+}
+
+.card .card-button button{
+  padding: 6px;
+  background-color: #f0cd1f;
+  outline: none;
+  border: 1px solid #3489d1;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.card .card-button button:hover{
+  background-color: darkorange;
+}
+
+/* Grid cards css END*/
