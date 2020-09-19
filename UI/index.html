@@ -9,14 +9,14 @@
     </head>
     <body>
         <div class="header">
-            <a href="#" class="logo">STOCKHOLM</a>
+            <a id="headlinks" href="#" class="logo">STOCKHOLM</a>
             <div class="header-right">
-              <a  href="index.html">Home</a>
-              <a href="about.html">About</a>
-              <a href="movies.html">Movies</a>
-              <a href="tvseries.html">Tv Series</a>
-              <a href="contact.html">Contact</a>
-              <a href="#"><i class="fa fa-user" style="font-size:35px;color:rgb(7, 1, 1)"></i></a>
+              <a id="headlinks" href="index.html">Home</a>
+              <a id="headlinks" href="about.html">About</a>
+              <a id="headlinks" href="movies.html">Movies</a>
+              <a id="headlinks" href="tvseries.html">Tv Series</a>
+              <a id="headlinks" href="contact.html">Contact</a>
+              <a id="headlinks" href="#"><i class="fa fa-user" style="font-size:35px;color:rgb(7, 1, 1)"></i></a>
               <div class="dropdown">
                 <button class="dropbtn"> 
                     <i class="fa fa-angle-double-down" style="font-size:35px;color:rgb(10, 1, 1)"></i>
@@ -28,6 +28,43 @@
                 </div>
             </div>
           </div>
-    
+     <!--inserting footer fixed at bottom of page-->
+     <footer>
+      <div id="container">
+        <div id="grid1">
+            <p id="top"><b>Stockholm video Lib</b><br>
+            <ul><li>Your Entertainment is our Pleasure</li></ul>
+        </p>
+        <p style="margin-top: 15%;"><b><a href="" id="link" style="text-decoration: none; background-color: transparent;">SIGN UP</a></b></p>
+        </div>
+        <div id="grid2">
+            <p id="top"><b>Navigation</b><br>
+            <ul><!--list of internal links to various significant parts of the web app -->
+                <li><a href="" id="link" style="text-decoration: none;">Home</a></li><br>
+                <li><a href="" id="link" style="text-decoration: none;">Movies</a></li><br>
+                <li><a href="" id="link" style="text-decoration: none;">TV-Series</a></li><br>
+                <li><a href="" id="link" style="text-decoration: none;">Animations</a></li><br>
+                <li><a href="" id="link" style="text-decoration: none;">Genre</a></li><br>
+                <li><a href="" id="link" style="text-decoration: none;">Contact</a></li>
+            </ul></p>
+        </div>
+        <div id="grid3">
+            <p id="top"><b>Follow Us</b><br>
+            <ul style="text-align: center;"><!--list of external links to social media accounts. Opened in a new blank tab-->
+                <li><a href="" target="_blank" style="background-color: transparent;"><img src="https://www.transparentpng.com/thumb/twitter/twitter-png-transparent-images-black-background-28.png" alt="twitter png transparent images black background @transparentpng.com" height="40px" width="40px"></a></li>
+                <li><a href="" target="_blank" style="background-color: transparent;"><img src="https://www.transparentpng.com/thumb/logo-instagram/mrG45j-instagram-black-logo-free-download.png" alt="Instagram Black Logo Free Download @transparentpng.com" height="35px" width="35px"></a></li>
+                <li><a href="" target="_blank" style="background-color: transparent;"><img src="https://www.transparentpng.com/thumb/facebook-logo-png/image-black-facebook-logo-png-26.png" alt="Image Black Facebook Logo PNG @transparentpng.com" height="32px" width="32px"></a></li>
+                <li><a href="" target="_blank" style="background-color: transparent;"><img src="https://www.transparentpng.com/thumb/linkedin/black-linkedin-png-transparent-image--11.png" alt="black linkedin png transparent image  @transparentpng.com" height="32px" width="32px"></a></li>
+            </ul></p>
+        </div>
+        <div id="grid4">
+            <hr>
+            <p style="font-size: 13px; margin-bottom: 30px;">© <span id="year"></span> Copyright Stockholm, All Rights Reserved</p>
+        </div>
+      </div>
+      <script>
+       document.getElementById("year").innerHTML = new Date().getFullYear() //js code adds a dynamic year date
+      </script>
+    </footer>
     </body>
 </html>
