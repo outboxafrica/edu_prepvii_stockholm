@@ -1,0 +1,1 @@
+document.getElementById("year").innerHTML = new Date().getFullYear()//places a dynamic year date in location specified
