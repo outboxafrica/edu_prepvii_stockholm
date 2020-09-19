@@ -1,14 +1,14 @@
 /* Style the header with a grey background and some padding */
 .header {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #01061d;
     padding: 20px 10px;
   }
   
   /* Style the header links */
   .header a {
     float: left;
-    color: black;
+    color: #f1f1f1;
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -25,8 +25,8 @@
   
   /* Change the background color on mouse-over */
   .header a:hover {
-    background-color: #f1f1f1;
-    color: purple;
+    background-color: #01061d;
+    color: rgb(107, 183, 206);
   }
   .logo {
       margin-left: 30px;
@@ -75,7 +75,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #01061d;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -83,7 +83,7 @@
   
   .dropdown-content a {
     float: none;
-    color: black;
+    color: rgb(233, 232, 232);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -91,13 +91,13 @@
   }
   
   a:hover, .dropdown:hover .dropbtn {
-    background-color: #555;
-    color: white;
+    background-color: #01061d;
+    color: #f1f1f1;
   }
   
   .dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color:  #01061d;
+    color: rgb(107, 183, 206);
   }
   
   .dropdown:hover .dropdown-content {
