@@ -18,35 +18,36 @@
             <!-- <i class="lock" style="text-align: center;"><img src="img/videoliblogo.png" class="image" alt="" /></i> -->
             <h2 class="title">Sign in</h2>
             <div class="input-field">
-              <i class="user"><img src="images/user-o.svg" class="image" alt="" /></i>
-              <input type="text" placeholder="Username" />
+              <i class="user"><img src="images/envelope-o.svg" class="image" alt="" /></i>
+              <input id="se" type="text" placeholder="E-mail" />
             </div>
             <div class="input-field">
               <i class="lock"><img src="images/lock.svg" class="image" alt="" /></i>
-              <input type="password" placeholder="Password" />
+              <input id="sp" type="password" placeholder="Password" />
             </div>
-            <input type="submit" value="Login" class="btn solid" />
+            <input type="submit" value="Login" onclick="login()" class="btn" />
           </form>
+
           <form action="#" class="sign-up-form">
             <h1><strong>STOCKHOLM</strong> MOVIE LIBRARY</h1>
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="user"><img src="images/user-o.svg" class="image" alt="" /></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" id="ru" placeholder="Username" />
             </div>
             <div class="input-field">
               <i class="envelope"><img src="images/envelope-o.svg" class="image" alt="" /></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" id="re" placeholder="Email" />
             </div>
             <div class="input-field">
               <i class="lock"><img src="images/lock.svg" class="image" alt="" /></i>
-              <input type="password" placeholder="Password" />
+              <input type="password" id="rp" placeholder="Password" />
             </div>
             <div class="input-field">
               <i class="lock"><img src="images/lock.svg" class="image" alt="" /></i>
-              <input type="password" placeholder="Confirm Password" />
+              <input type="password" id="rrp" placeholder="Confirm Password" />
             </div>
-            <input type="submit" class="btn" value="Sign up" />
+            <input type="submit" onclick="register()" class="btn" value="Sign up" />
           </form>
         </div>
       </div>
@@ -85,7 +86,6 @@
         </div>
       </div>
     </div>
-
-    <script src="js/main.js"></script>
+    <script src="js/SignIn_SignUp.js"></script>
   </body>
 </html>
