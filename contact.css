@@ -1,0 +1,36 @@
+*{box-sizing: border-box;}
+/* Slideshow container */
+.main{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    background-color:gray
+     ;
+}
+.write{
+    padding: 10px;
+    margin-left: 25px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    border-top: #000;
+    padding: 10px;
+    margin-left: 25px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.item{
+    display: inline-block;
+    width: 400px;
+}
+.message{
+    height: 200px;
+    width: 400px;
+    border-radius: 10px;
+}
+.name {
+    padding: 30px;
+    text-align: center;
+    font-size: 14px;
+}
