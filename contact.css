@@ -1,31 +1,48 @@
 *{box-sizing: border-box;}
 /* Slideshow container */
 .main{
-    max-width: 1000px;
+    max-width: 950px;
     position: relative;
     margin: auto;
-    background-color:gray
-     ;
+    background-color:gray;
+    border-radius: 10px;
 }
 .write{
-    padding: 10px;
+    padding: 4px;
     margin-left: 25px;
-    font-size: 30px;
+    font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container {
     border-top: #000;
-    padding: 10px;
+    padding: 6px;
     margin-left: 25px;
-    font-size: 30px;
+    font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .item{
     display: inline-block;
     width: 400px;
+    border-right: bisque;
 }
 .message{
     height: 200px;
     width: 400px;
     border-radius: 10px;
+    margin-right: 6px;
+    text-align: start;
+}
+#email {
+    height: 50px;
+    border-radius: 6px;
+}
+#name {
+    height: 50px;
+    border-radius: 6px;
+}
+button {
+    height: 35px;
+    width: 200px;
+    border-radius: 6px;
+    cursor: pointer;
 }
