@@ -116,3 +116,55 @@ function myFunction1() {
     img[indexValue - 1].style.display = "block";
   }
   slideShow();
+
+  /*------------------------------------------------------------------------
+  -----------------------LIKE BUTTON------------------------------------------
+  -----------------------------------------------------------------------------*/
+  function like1(){
+      document.getElementById("lk1").src="images/thumbs-o-up.svg";
+  }
+  function like2(){
+    document.getElementById("lk2").src="images/thumbs-o-up.svg";
+}
+function like3(){
+    document.getElementById("lk3").src="images/thumbs-o-up.svg";
+}
+function like4(){
+    document.getElementById("lk4").src="images/thumbs-o-up.svg";
+}
+function like5(){
+    document.getElementById("lk5").src="images/thumbs-o-up.svg";
+}
+function like6(){
+    document.getElementById("lk6").src="images/thumbs-o-up.svg";
+}
+function like7(){
+    document.getElementById("lk7").src="images/thumbs-o-up.svg";
+}
+function like8(){
+    document.getElementById("lk8").src="images/thumbs-o-up.svg";
+}
+function like9(){
+    document.getElementById("lk9").src="images/thumbs-o-up.svg";
+}
+function like10(){
+    document.getElementById("lk10").src="images/thumbs-o-up.svg";
+}
+function like11(){
+    document.getElementById("lk11").src="images/thumbs-o-up.svg";
+}
+function like12(){
+    document.getElementById("lk12").src="images/thumbs-o-up.svg";
+}
+function like13(){
+    document.getElementById("lk13").src="images/thumbs-o-up.svg";
+}
+function like14(){
+    document.getElementById("lk14").src="images/thumbs-o-up.svg";
+}
+function like15(){
+    document.getElementById("lk15").src="images/thumbs-o-up.svg";
+}
+function like16(){
+    document.getElementById("lk16").src="images/thumbs-o-up.svg";
+}
