@@ -51,7 +51,7 @@ color: rgb(107, 183, 206);
 }
 .logo {
   margin-left: 30px;
-  background-image: url("images/stockholm2.png");
+  background-image: url("Images/stockholm2.png");
 }
 
 
@@ -127,7 +127,7 @@ display: block;
 }
 
 .dropbtn{
-background-image: url("images/user.svg");
+background-image: url("Images/user.svg");
 background-size: cover;
 background-repeat: no-repeat;
 border-radius: 50%;
@@ -699,25 +699,25 @@ border-bottom: 2px solid #1E1E1E;
 
 }
 .twitter{
-background-image: url('images/twitter.png');
+background-image: url('Images/twitter.png');
 /* background-size: 100% 100%; */
 background-repeat: no-repeat;
 background-position: center;
 }
 .linkdin{
-background-image: url('images/linkedin.png');
+background-image: url('Images/linkedin.png');
 /* background-size: 100% 100%; */
 background-repeat: no-repeat;
 background-position: center;
 }
-.instagaram{
-background-image: url('images/instagram.png');
+.github{
+background-image: url('Images/phone.png');
 /* background-size: 100% 100%; */
 background-repeat: no-repeat;
 background-position: center;
 }
 .facebook{
-background-image: url('images/facebook.png');
+background-image: url('Images/facebook.png');
 /* background-size: 100% 100%; */
 background-repeat: no-repeat;
 background-position: center;
