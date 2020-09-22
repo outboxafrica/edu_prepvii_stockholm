@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body{
   background: rgb(223, 220, 220);
@@ -11,11 +14,12 @@ body{
 
 /* Style the header with a grey background and some padding */
 .header {
-    /* overflow: hidden; */
+    overflow: hidden; 
     background-color: #001e27;
     padding: 20px 10px;
     position: fixed;
     width: 100%;
+    top: 0;
   }
 
   /* Style the header links */
@@ -115,6 +119,11 @@ body{
 
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+  /* main*/
+  .main {
+    margin-top: 125px;
+    height: auto; /* Used in this example to enable scrolling */
   }
 
 
