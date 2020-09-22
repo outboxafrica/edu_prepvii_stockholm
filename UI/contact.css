@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: darkgrey;
+    font-family: sans-serif;
+}
+
+.container{
+   max-width: 800px;
+    height: 600px;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px lightgray;
+    margin: auto;
+    background: lightgray;
+    padding: 50px;
+}
+
+.container p{
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: darkgrey;
+}
+
+.input, .msg .area{
+    padding: 20px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    font-size: medium;
+    box-sizing: border-box;
+    width: 100%;
+    transition: all 1s ease;
+    outline: none;
+    margin-bottom: 25px;
+}
+
+.login .input{
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+
+.login .input:last-child{
+    margin-right: 0;
+}
+
+.btn{
+    margin: 0 auto;
+    width: 250px;
+    text-align: center;
+    background: darkgray;
+    height: 50px;
+    border-radius: 5px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.msg .area{
+    height: 200px;
+}
+
+.input:focus,
+.msg .area:focus{
+    border: 2px solid darkgray;
+}
+
+::-webkit-input-placeholder{
+    font-family: sans-serif;
+}
+
+::-moz-input-placeholder{
+    font-family: sans-serif;
+}
+
+::-ms-input-placeholder{
+    font-family: sans-serif;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stockholm/contact us</title>
+    <link rel="stylesheet" href="contact.css">
+    <script>
+        $(document).ready(function(){
+            $(".btn").click(function(){
+                $(".input, .area").val("")
+            })})
+    </script>
+</head>
+<body>
+    <div class="container">
+        <p>Write To Us</p>
+
+        <div class="login">
+        <input type="text" class="input" placeholder="Name">
+        <input type="text" class="input" placeholder="Email Address">
+        </div>
+
+        <div class="msg">
+            <textarea class="area" placeholder="Write to us"></textarea>
+        </div>
+
+        <div class="btn">Submit</div>
+      
+
+</body>
+</html>
