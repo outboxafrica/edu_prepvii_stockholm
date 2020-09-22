@@ -1,234 +1,471 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>STOCKHOLM VIDEO LIBRARY</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="css/main.css" rel="stylesheet">
-    </head>
-    <body>
+<html>
+
+<head>
+    <title>Stockholm Vid Lib</title>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/cart.js" async></script>
+</head>
+
+<body>
+    <div class="grid">
         <div class="header">
-            <a href="#" class="logo">STOCKHOLM</a>
+            <a data-id="home" class="logo">STOCKHOLM</a>
             <div class="header-right">
-              <a  href="index.html">Home</a>
-              <a href="about.html">About</a>
-              <a href="movies.html">Movies</a>
-              <a href="tvseries.html">Tv Series</a>
-              <a href="contact.html">Contact</a>
-              <a href="#"><i class="fa fa-user" style="font-size:35px;color:rgb(247, 241, 241)"></i></a>
-              <a href="#"><i class="fa fa-shopping-cart" style="font-size:35px;color:rgb(247, 241, 241)"></i></a>
-              <div class="dropdown">
-                <button class="dropbtn"> 
-                    <i class="fa fa-angle-double-down" style="font-size:35px;color:rgb(247, 241, 241)"></i>
-                </button>
-                <div class="dropdown-content">
-                  <a href="logout.html">Logout</a>
-                  <a href="login.html">Login</a>
-        
+                <a class="tab-btn active" data-id="home">Home</a>
+                <a class="tab-btn" data-id="store">Movies</a>
+                <a class="tab-btn" data-id="contact">Contact</a>
+                <a class="tab-btn" data-id="cart">Cart</a>
+                <a href="#"><i class="fa fa-user" style="font-size:35px;color:rgb(247, 241, 241)"></i></a>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fa fa-angle-double-down" style="font-size:35px;color:rgb(247, 241, 241)"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="SignIn_SignUp.html">Logout</a>
+                        <a href="SignIn_SignUp.html">Login</a>
+
+                    </div>
                 </div>
             </div>
-          </div>
         </div>
-        <div class="main">
-          <!--Insert image slider/carousel-->
-   
+        <div class="about-content">
+            <!--home-->
+            <div class="content active" id="home">
 
+                <header class="main-header">
+                    <div class="images">
+                        <img class="slimg" src="images/supergirl_season_3_2017-1280x800.jpg">
+                        <img class="slimg" src="images/wp2020192-tv-show-wallpapers.jpg">
+                        <img class="slimg" src="images/2zT5MXc-movies-2020-wallpapers.jpg">
+                        <img class="slimg" src="images/wp4208284-tv-show-wallpapers.jpg">
+                        <img class="slimg" src="images/wp5152694-movies-2020-wallpapers.jpg">
+                    </div>
+                </header>
 
-    <!-- Movie list Grid-->
-     <div class="card__list" id="Movies">
-        <h1 class="heading">Movies</h1>
+                <h2 class="heading">Suggested For You...</h2>
+                <!-- Movie List Row 1-->
 
-  <!-- Movie List Row 1-->
-  
-  <div class="card__row">
-    <div class="card">
-      <img src="images/Black panther.jpg" alt="Black panther" class="card__image"/>
-      <p class="card__name">Black Panther</p>
-      <p class="card__price">UGX 20,000</p>
+                <!--1.1-->
+                <div class="card__row">
+                    <!-- <div> -->
+                    <div class="card">
+                        <img class="shop-item-image" src="images/spiesdispostermain_thumb.jpg">
+                        <span class="shop-item-title">Spies In Disguise</span>
+                        <div class="shop-item-details">
+                            <button class="btn btn-primary shop-item-button" type="button">
+                                ADD TO CART
+                                <span class="shop-item-price">UGX25000</span>
+                            </button>
+                        </div>
+                        <div class="comment-button">
+                            <button type="button" class="mdropbtn" onclick="myFunction1()">Learn more...</button>
+                            <div class="more" id="more1">
+                                <p style="word-wrap: break-word; width: 250px;">
+                                  Spies in Disguise Theatrical release poster Directed by Troy Quane Nick Bruno Produced by Peter Chernin Jenno Topping Michael J. Travers Screenplay by Brad Copeland Lloyd Taylor Story byCindy Davis Based onPigeon: Impossible by Lucas Martell Starring Will Smith Tom Holland Music byTheodore Shapiro Edited by Randy Trager Christopher Campbell Production companies Blue Sky Studios 20th Century Fox
+                                </p>
+                            </div>
+                        </div>
+                      <img id="lk1" onclick="like1()" src="images/thumbs-o-down.svg" style="font-size: 50px; height: 36px; width: 36px; color: aqua;"/>
+                    </div>
+                    <div class="card">
+                        <img class="shop-item-image" src="images/Suits.jpg">
+                        <span class="shop-item-title">Suits</span>
+                        <div class="shop-item-details">
+                            <button class="btn btn-primary shop-item-button" type="button">
+                                ADD TO CART
+                                <span class="shop-item-price">UGX25000</span>
+                            </button>
+                        </div>
+                        <div class="comment-button">
+                            <button type="button" class="mdropbtn" onclick="myFunction2()">Learn more...</button>
+                            <div class="more" id="more2">
+                                <p style="word-wrap: break-word; width: 250px;">
+                                  Suits GenreLegal drama Created byAaron Korsh Starring Gabriel Macht Patrick J. Adams Rick Hoffman Meghan Markle Sarah Rafferty Gina Torres Amanda Schull Dulé Hill Katherine Heigl Opening theme"Greenback Boogie" by Ima Robot ComposerChristopher Tyng Country of originUnited States Original languageEnglish No. of seasons9 No. of episodes134 Production Executive producer Doug Liman Dave Bartis Producer Gene Klein Gabriel Macht Patrick J. Adams 
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <img id="lk2" onclick="like2()" src="images/thumbs-o-down.svg" style="font-size: 50px; height: 36px; width: 36px; color: aqua;"/>
+                    </div>
+                    <div class="card">
+                        <img class="shop-item-image" src="images/teneposterfinal7_thumb.jpg">
+                        <span class="shop-item-title">Tenet</span>
+                        <div class="shop-item-details">
+                            <button class="btn btn-primary shop-item-button" type="button">
+                                ADD TO CART
+                                <span class="shop-item-price">UGX25000</span>
+                            </button>
+                        </div>
+                        <div class="comment-button">
+                            <button type="button" class="mdropbtn" onclick="myFunction3()">Learn more...</button>
+                            <div class="more" id="more3">
+                                <p style="word-wrap: break-word; width: 250px;">
+                                  An unnamed CIA agent—"The Protagonist"—participates in an undercover operation at a Kiev opera house. He is aided by a masked soldier with a distinctive trinket, who appears to "un-fire" a bullet through a hostile gunman. After rescuing an exposed spy and seizing a strange artifact, the Protagonist is captured by Russian mercenaries. He endures torture before consuming a cyanide pill. He later awakens to learn the pill was fake; his team has been killed and the artifact lost. 
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <img id="lk3" onclick="like3()" src="images/thumbs-o-down.svg" style="font-size: 50px; height: 36px; width: 36px; color: aqua;"/>
+                    </div>
+                    <div class="card">
+                        <img class="shop-item-image" src="images/wp4208212-tv-show-wallpapers.jpg">
+                        <span class="shop-item-title">Gotham</span>
+                        <div class="shop-item-details">
+                            <button class="btn btn-primary shop-item-button" type="button">
+                                ADD TO CART
+                                <span class="shop-item-price">UGX25000</span>
+                            </button>
+                        </div>
+                        <div class="comment-button">
+                            <button type="button" class="mdropbtn" onclick="myFunction4()">Learn more...</button>
+                            <div class="more" id="more4">
+                                <p style="word-wrap: break-word; width: 250px;">
+                                  Created by Bruno Heller. With Ben McKenzie, Jada Pinkett Smith, Donal Logue, Camren Bicondova. The story behind Detective James Gordon's rise to prominence in Gotham City in the years before Batman's arrival.
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <img id="lk4" onclick="like4()" src="images/thumbs-o-down.svg" style="font-size: 50px; height: 36px; width: 36px; color: aqua;"/>
+                    </div>
+                </div>
+            </div>
 
-    <!--Brian adjust the link class and href as you per your code on all comment buttons-->
+            <!--store-->
+            <div class="content" id="store">
+                <h2 class="heading">Animation</h2>
+                <div class="card__row">
+                    <!-- <div> -->
+                    <div class="card">
+                        <img class="shop-item-image" src="images/Frozen.jpg">
+                        <span class="shop-item-title">Frozen 2</span>
+                        <div class="shop-item-details">
+                            <button class="btn btn-primary shop-item-button" type="button">
+                                ADD TO CART
+                                <span class="shop-item-price">UGX25000</span>
+                            </button>
+                        </div>
+                        <div class="comment-button">
+                            <button type="button" class="mdropbtn" onclick="myFunction5()">Learn more...</button>
+                            <div class="more" id="more5">
+                                <p style="word-wrap: break-word; width: 250px;">
+                                  In “Frozen 2,” Elsa is grateful her kingdom accepts her and she works hard to be a good queen. Deep down, she wonders why she was born with magical powers. The answers are calling her, but she’ll have to venture far from Arendelle to find them. Featuring the voices of Idina Menzel, Kristen Bell, Jonathan Groff and Josh Gad, Walt Disney 
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <img id="lk5" onclick="like5()" src="images/thumbs-o-down.svg" style="font-size: 50px; height: 36px; width: 36px; color: aqua;"/>
+                    </div>
+                    <div class="card">
+                        <img class="shop-item-image" src="images/sonic.jpg">
+                        <span class="shop-item-title">Sonic the Hedgehog</span>
+                        <div class="shop-item-details">
+                            <button class="btn btn-primary shop-item-button" type="button">
+                                ADD TO CART
+                                <span class="shop-item-price">UGX25000</span>
+                            </button>
+                        </div>
+                        <div class="comment-button">
+                            <button type="button" class="mdropbtn" onclick="myFunction6()">Learn more...</button>
+                            <div class="more" id="more6">
+                                <p style="word-wrap: break-word; width: 250px;">
+                                  Directed by Jeff Fowler. With Ben Schwartz, James Marsden, Jim Carrey, Tika Sumpter. After discovering a small, blue, fast hedgehog, a small-town police officer must help him defeat an evil genius who wants to do experiments on him.
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <img id="lk6" onclick="like6()" src="images/thumbs-o-down.svg" style="font-size: 50px; height: 36px; width: 36px; color: aqua;"/>
+                    </div>
+                    <div class="card">
+                        <img class="shop-item-image" src="images/Dora.jpg">
+                        <span class="shop-item-title">Dora The Explorer</span>
+                        <div class="shop-item-details">
+                            <button class="btn btn-primary shop-item-button" type="button">
+                                ADD TO CART
+                                <span class="shop-item-price">UGX25000</span>
+                            </button>
+                        </div>
+                        <div class="comment-button">
+                            <button type="button" class="mdropbtn" onclick="myFunction7()">Learn more...</button>
+                            <div class="more" id="more7">
+                                <p style="word-wrap: break-word; width: 250px;">
+                                  Directed by James Bobin. With Isabela Merced, Eugenio Derbez, Michael Peña, Eva Longoria. Dora, a teenage explorer, leads her friends on an adventure to save her parents and solve the mystery behind a lost city of gold.
+                                </p>
+                            </div>
+                        </div>
+                        <img id="lk7" onclick="like7()" src="images/thumbs-o-down.svg" style="font-size: 50px; height: 36px; width: 36px; color: aqua;"/>
+                    </div>
+                    <div class="card">
+                        <img class="shop-item-image" src="images/Addams-Family-poster-9.jpg">
+                        <span class="shop-item-title">Adams Family</span>
+                        <div class="shop-item-details">
+                            <button class="btn btn-primary shop-item-button" type="button">
+                                ADD TO CART
+                                <span class="shop-item-price">UGX25000</span>
+                            </button>
+                        </div>
+                        <div class="comment-button">
+                            <button type="button" class="mdropbtn" onclick="myFunction8()">Learn more...</button>
+                            <div class="more" id="more8">
+                                <p style="word-wrap: break-word; width: 250px;">
+                                  Directed by Greg Tiernan, Conrad Vernon. With Oscar Isaac, Charlize Theron, Chloë Grace Moretz, Finn Wolfhard. The eccentrically macabre family moves to a bland suburb where Wednesday Addams' friendship with the daughter of a hostile and conformist local reality show host exacerbates conflict between the families.
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <img id="lk8" onclick="like8()" src="images/thumbs-o-down.svg" style="font-size: 50px; height: 36px; width: 36px; color: aqua;"/>
+                    </div>
+                </div>
 
-      <div class="comment-button">
-          <button type="button">Learn more <i class='fas fa-comments'><a href="" class="comment-button-link"></a></i></button>
-      </div>
-      <div class="card-button">
-          <button type="button">Add to Cart</button>
-        </div>
-    </div>
-  
-  <!--1.2-->
-  
-    <div class="card">
-      <img src="images/Avengers Endgame.jpg" alt="Avengers Endgame" class="card__image"/>
-      <p class="card__name">Avengers Endgame</p>
-      <p class="card__price">UGX 20,000</p>
-      <div class="comment-button">
-          <button type="button">Learn more <i class='fas fa-comments'><a href="" class="comment-button-link"></a></i></button>
-      </div>
-      <div class="card-button">
-          <button type="button">Add to Cart</button>
-        </div>
-    </div>
-  
-  <!--1.3-->
-  
-      <div class="card">
-        <img src="images/James Bond.jpg" alt="James Bond" class="card__image"/>
-        <p class="card__name">James Bond</p>
-        <p class="card__price">UGX 20,000</p>
-        <div class="comment-button">
-            <button type="button">Learn more <i class='fas fa-comments'><a href="" class="comment-button-link"></a></i></button>
-        </div>
-        <div class="card-button">
-            <button type="button">Add to Cart</button>
-          </div>
-      </div>
+                <hr>
 
+                <h2 class="heading">Movies</h2>
+                <div class="card__row">
+                    <!-- <div> -->
+                    <div class="card">
+                        <img class="shop-item-image" src="images/Avengers Endgame.jpg">
+                        <span class="shop-item-title">Avengers Endgame</span>
+                        <div class="shop-item-details">
+                            <button class="btn btn-primary shop-item-button" type="button">
+                                ADD TO CART
+                                <span class="shop-item-price">UGX25000</span>
+                            </button>
+                        </div>
+                        <div class="comment-button">
+                            <button type="button" class="mdropbtn" onclick="myFunction10()">Learn more...</button>
+                            <div class="more" id="more10">
+                                <p style="word-wrap: break-word; width: 250px;">
+                                  Directed by Anthony Russo, Joe Russo. With Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth. After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <img id="lk9" onclick="like9()" src="images/thumbs-o-down.svg" style="font-size: 50px; height: 36px; width: 36px; color: aqua;"/>
+                    </div>
+                    <div class="card">
+                        <img class="shop-item-image" src="images/Black panther.jpg">
+                        <span class="shop-item-title">Black Panther</span>
+                        <div class="shop-item-details">
+                            <button class="btn btn-primary shop-item-button" type="button">
+                                ADD TO CART
+                                <span class="shop-item-price">UGX25000</span>
+                            </button>
+                        </div>
+                        <div class="comment-button">
+                            <button type="button" class="mdropbtn" onclick="myFunction11()">Learn more...</button>
+                            <div class="more" id="more11">
+                                <p style="word-wrap: break-word; width: 250px;">
+                                  Directed by Ryan Coogler. With Chadwick Boseman, Michael B. Jordan, Lupita Nyong'o, Danai Gurira. T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <img id="lk10" onclick="like10()" src="images/thumbs-o-down.svg" style="font-size: 50px; height: 36px; width: 36px; color: aqua;"/>
+                    </div>
+                    <div class="card">
+                        <img class="shop-item-image" src="images/Aladin.jpg">
+                        <span class="shop-item-title">Aladin</span>
+                        <div class="shop-item-details">
+                            <button class="btn btn-primary shop-item-button" type="button">
+                                ADD TO CART
+                                <span class="shop-item-price">UGX25000</span>
+                            </button>
+                        </div>
+                        <div class="comment-button">
+                            <button type="button" class="mdropbtn" onclick="myFunction12()">Learn more...</button>
+                            <div class="more" id="more12">
+                                <p style="word-wrap: break-word; width: 250px;">
+                                  Directed by Guy Ritchie. With Will Smith, Mena Massoud, Naomi Scott, Marwan Kenzari. A kind-hearted street urchin and a power-hungry Grand Vizier vie for a magic lamp that has the power to make their deepest wishes come true.
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <img id="lk11" onclick="like11()" src="images/thumbs-o-down.svg" style="font-size: 50px; height: 36px; width: 36px; color: aqua;"/>
+                    </div>
+                    <div class="card">
+                        <img class="shop-item-image" src="images/James Bond.jpg">
+                        <span class="shop-item-title">James Bond</span>
+                        <div class="shop-item-details">
+                            <button class="btn btn-primary shop-item-button" type="button">
+                                ADD TO CART
+                                <span class="shop-item-price">UGX25000</span>
+                            </button>
+                        </div>
+                        <div class="comment-button">
+                            <button type="button" class="mdropbtn" onclick="myFunction13()">Learn more...</button>
+                            <div class="more" id="more13">
+                                <p style="word-wrap: break-word; width: 250px;">
+                                  In No Time To Die, Bond has left active service and is enjoying a tranquil life in Jamaica.His peace is short-lived when his old friend Felix Leiter from the CIA turns up asking for help. The mission to rescue a kidnapped scientist turns out to be far more treacherous than expected, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <img id="lk12" onclick="like12()" src="images/thumbs-o-down.svg" style="font-size: 50px; height: 36px; width: 36px; color: aqua;"/>
+                    </div>
+                </div>
 
-      <!--1.4-->
+                <hr>
 
-      <div class="card">
-          <img src="images/Aladin.jpg" alt="Aladin" class="card__image"/>
-          <p class="card__name">Aladin</p>
-          <p class="card__price">UGX 20,000</p>
-          <div class="comment-button">
-              <button type="button">Learn more <i class='fas fa-comments'><a href="" class="comment-button-link"></a></i></button>
-          </div>
-          <div class="card-button">
-              <button type="button">Add to Cart</button>
+                <h2 class="heading">Series</h2>
+                <div class="card__row">
+                    <!-- <div> -->
+                    <div class="card">
+                        <img class="shop-item-image" src="images/GOT.jpg">
+                        <span class="shop-item-title">GOT</span>
+                        <div class="shop-item-details">
+                            <button class="btn btn-primary shop-item-button" type="button">
+                                ADD TO CART
+                                <span class="shop-item-price">UGX25000</span>
+                            </button>
+                        </div>
+                        <div class="comment-button">
+                            <button type="button" class="mdropbtn" onclick="myFunction14()">Learn more...</button>
+                            <div class="more" id="more14">
+                                <p style="word-wrap: break-word; width: 250px;">
+                                  Created by David Benioff, D.B. Weiss. With Emilia Clarke, Peter Dinklage, Kit Harington, Lena Headey. Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <img id="lk13" onclick="like13()" src="images/thumbs-o-down.svg" style="font-size: 50px; height: 36px; width: 36px; color: aqua;"/>
+                    </div>
+                    <div class="card">
+                        <img class="shop-item-image" src="images/Friends.jpg">
+                        <span class="shop-item-title">Friends</span>
+                        <div class="shop-item-details">
+                            <button class="btn btn-primary shop-item-button" type="button">
+                                ADD TO CART
+                                <span class="shop-item-price">UGX25000</span>
+                            </button>
+                        </div>
+                        <div class="comment-button">
+                            <button type="button" class="mdropbtn" onclick="myFunction15()">Learn more...</button>
+                            <div class="more" id="more15">
+                                <p style="word-wrap: break-word; width: 250px;">
+                                  Created by David Crane, Marta Kauffman. With Jennifer Aniston, Courteney Cox, Lisa Kudrow, Matt LeBlanc. Follows the personal and professional lives of six twenty to thirty-something-year-old friends living in Manhattan.
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <img id="lk14" onclick="like14()" src="images/thumbs-o-down.svg" style="font-size: 50px; height: 36px; width: 36px; color: aqua;"/>
+                    </div>
+                    <div class="card">
+                        <img class="shop-item-image" src="images/Prison break.jpg">
+                        <span class="shop-item-title">Prison break</span>
+                        <div class="shop-item-details">
+                            <button class="btn btn-primary shop-item-button" type="button">
+                                ADD TO CART
+                                <span class="shop-item-price">UGX25000</span>
+                            </button>
+                        </div>
+                        <div class="comment-button">
+                            <button type="button" class="mdropbtn" onclick="myFunction16()">Learn more...</button>
+                            <div class="more" id="more16">
+                                <p style="word-wrap: break-word; width: 250px;">
+                                  Created by Paul T. Scheuring. With Dominic Purcell, Wentworth Miller, Amaury Nolasco, Robert Knepper. Due to a political conspiracy, an innocent man is sent to death row and his only hope is his brother, who makes it his mission to deliberately get himself sent to the same prison in order to break the both of them out, from the inside.
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <img id="lk15" onclick="like15()" src="images/thumbs-o-down.svg" style="font-size: 50px; height: 36px; width: 36px; color: aqua;"/>
+                    </div>
+                    <div class="card">
+                        <img class="shop-item-image" src="images/SEE.jpg">
+                        <span class="shop-item-title">See</span>
+                        <div class="shop-item-details">
+                            <button class="btn btn-primary shop-item-button" type="button">
+                                ADD TO CART
+                                <span class="shop-item-price">UGX25000</span>
+                            </button>
+                        </div>
+                        <div class="comment-button">
+                            <button type="button" class="mdropbtn" onclick="myFunction17()">Learn more...</button>
+                            <div class="more" id="more17">
+                                <p style="word-wrap: break-word; width: 250px;">
+                                  Created by Steven Knight. With Jason Momoa, Sylvia Hoeks, Hera Hilmar, Christian Camargo. Far in a dystopian future, the human race has lost the sense of sight, and society has had to find new ways to interact, build, hunt, and to survive. All of that is challenged when a set of twins is born with sight.
+                                </p>
+                                
+                            </div>
+                        </div>
+                        <img id="lk16" onclick="like16()" src="images/thumbs-o-down.svg" style="font-size: 50px; height: 36px; width: 36px; color: aqua;"/>
+                    </div>
+                </div>
+            </div>
+            <!-- CONTACT FORM -->
+            <!--contact-form------------------->
+            <div class="content" id="contact">
+                <div id="contact-form">
+                    <form>
+                        <!--left--------------------------------------->
+                        <div class="contact-left">
+                            <h1 class="c-l-heading">
+                                <font style="border-bottom: 3px solid #1ED98B;">Write</font> to Us
+                            </h1>
+                            <!--name-------->
+                            <div class="f-name">
+                                <font>Name</font>
+                                <input type="text" placeholder="Full Name" />
+                            </div>
+                            <!--email-------->
+                            <div class="f-email">
+                                <font>Email</font>
+                                <input type="email" placeholder="yourEmail@gmail.com" />
+                            </div>
+                        </div>
+                        <!--right------------------------------------------->
+                        <div class="contact-right">
+                            <!--message-------->
+                            <div class="message">
+                                <font>Message</font>
+                                <textarea name="message" rows="5" cols="20" placeholder="Write Message..."></textarea>
+                            </div>
+                            <!--submit-btn------------>
+                            <button>submit</button>
+                        </div>
+
+                    </form>
+                </div>
+                <!------------Contact-btn------------------>
+                <section id="contact-btn">
+                    <!--heading-------------->
+                    <h4 class="c-b-heading">Find us on our social media accounts...</h4>
+                    <!--btn-------->
+                    <div><span><button class="github"></button></span>
+                        <span><button class="linkdin"></button></span>
+                        <span><button class="twitter"></button></span>
+                        <span><button class="facebook"></button></span>
+                    </div>
+                </section>
+            </div>
+
+            <!--cart-->
+            <div class="content" id="cart">
+                <section class="container content-section">
+                    <h2 class="section-header">My Selection</h2>
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">ITEM</span>
+                        <span class="cart-price cart-header cart-column">PRICE</span>
+                        <span class="cart-quantity cart-header cart-column"></span>
+                    </div>
+                    <hr>
+                    <div class="cart-items">
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total</strong>
+                        <span class="cart-total-price">$0</span>
+                    </div>
+                    <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+                </section>
             </div>
         </div>
-
-  </div>
-   
-  
-  <!-- Tv Series List row 2 -->
-
-  <!--2.1-->
-
-  <h2 class="heading">Tv Series</h2>
-  <div class="card__row">
-    <div class="card">
-      <img src="images/Friends.jpg" alt="Friends"class="card__image"/>
-      <p class="card__name">Friends</p>
-      <p class="card__price">UGX 20,000</p>
-      <div class="comment-button">
-          <button type="button">Learn more <i class='fas fa-comments'><a href="" class="comment-button-link"></a></i></button>
-      </div>
-      <div class="card-button">
-          <button type="button">Add to Cart</button>
-        </div>
     </div>
-  
-  <!--2.2-->
-  
-    <div class="card">
-      <img src="images/Prison break.jpg" alt="Prison break" class="card__image"/>
-      <p class="card__name">Prison Break</p>
-      <p class="card__price">UGX 20,000</p>
-      <div class="comment-button">
-          <button type="button">Learn more <i class='fas fa-comments'><a href="" class="comment-button-link"></a></i></button>
-      </div>
-      <div class="card-button">
-          <button type="button">Add to Cart</button>
-        </div>
-    </div>
-  
-  <!--2.3-->
-  
-      <div class="card">
-        <img src="images/Suits.jpg" alt="suits" class="card__image"/>
-        <p class="card__name">Suits</p>
-        <p class="card__price">UGX 20,000</p>
-        <div class="comment-button">
-            <button type="button">Learn more <i class='fas fa-comments'><a href="" class="comment-button-link"></a></i></button>
-        </div>
-        <div class="card-button">
-          <button type="button">Add to Cart</button>
-        </div>
+    <script src="js/main.js"></script>
+    <footer class="footer">
+        <div class="footer__copyright">&copy; 2020 Edu Prep VII</div>
+        <div class="footer__signature">Made with love by Group Stockholm</div>
+    </footer>
 
-      </div>
+</body>
 
-  <!--2.4-->
-
-      <div class="card">
-          <img src="images/GOT.jpg" alt="Game of Thrones" class="card__image"/>
-          <p class="card__name">Game of Thrones</p>
-          <p class="card__price">UGX 20,000</p>
-          <div class="comment-button">
-              <button type="button">Learn more <i class='fas fa-comments'><a href="" class="comment-button-link"></a></i></button>
-          </div>
-          <div class="card-button">
-              <button type="button">Add to Cart</button>
-            </div>
-        </div>
-
-  </div>
-
-  <!-- Animation List row 3 -->
-  <!--3.1-->
-
-  <h2 class="heading">Animation</h2>
-  <div class="card__row">
-      <div class="card">
-        <img src="images/Brave.jpg" alt="Brave"class="card__image"/>
-        <p class="card__name">Brave</p>
-        <p class="card__price">UGX 20,000</p><div class="comment-button">
-            <button type="button">Learn more <i class='fas fa-comments'><a href="" class="comment-button-link"></a></i></button>
-        </div>
-        <div class="card-button">
-            <button type="button">Add to Cart</button>
-          </div>
-      </div>
-    
-    <!--3.2-->
-    
-      <div class="card">
-        <img src="images/Frozen.jpg" alt="Frozen" class="card__image"/>
-        <p class="card__name">Frozen</p>
-        <p class="card__price">UGX 20,000</p><div class="comment-button">
-            <button type="button">Learn more <i class='fas fa-comments'><a href="" class="comment-button-link"></a></i></button>
-        </div>
-        <div class="card-button">
-            <button type="button">Add to Cart</button>
-          </div>
-      </div>
-    
-    <!--3.3-->
-    
-        <div class="card">
-          <img src="images/Dora.jpg" alt="Dora" class="card__image"/>
-          <p class="card__name">Dora</p>
-          <p class="card__price">UGX 20,000</p>
-          <div class="comment-button">
-              <button type="button">Learn more <i class='fas fa-comments'><a href="" class="comment-button-link"></a></i></button>
-          </div>
-          <div class="card-button">
-              <button type="button">Add to Cart</button>
-            </div>
-        </div>
-
-    <!--3.4-->
-
-        <div class="card">
-            <img src="images/Aladin.jpg" alt="Aladin" class="card__image"/>
-            <p class="card__name">Aladin</p>
-            <p class="card__price">UGX 20,000</p>
-            <div class="comment-button">
-                <button type="button">Learn more <i class='fas fa-comments'><a href="" class="comment-button-link"></a></i></button>
-            </div>
-            <div class="card-button">
-                <button type="button">Add to Cart</button>
-              </div>
-          </div>
-    </div>
-</div>
-
-<!--END-->
-        </div>
-
-
-    
-    </body>
 </html>
