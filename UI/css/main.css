@@ -863,11 +863,12 @@ transition: all ease 0.1s;
 
 /*---------------------FOOTER------------ */
 .footer {
-  grid-area: footer;
   display: flex;
+  height: 40px;
   align-items: center;
+  font-weight: bolder;
   justify-content: space-between;
   padding: 0 16px;
-  color: #777;
+  color: rgb(4, 0, 58);
   background-color: #FFF;
   }
