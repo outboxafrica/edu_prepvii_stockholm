@@ -60,7 +60,7 @@ function addItemToCart(title, imageSrc) {
     m = date.getMonth()
     y = date.getFullYear()
 
-    for (i = 0; i < 3; i++) {
+    for (i = 0; i < 4; i++) {
         var curdate = new Date(y, m, d + i)
         var ReturnD = curdate.toLocaleDateString();
     }

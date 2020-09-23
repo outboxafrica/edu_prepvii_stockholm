@@ -86,7 +86,7 @@ function login(){
         document.getElementById("se").value ="";
         document.getElementById("sp").value="";
 
-        window.location="index.html";
+        window.location="UI/home.html";
         return ;
     }
 
