@@ -18,6 +18,8 @@ var emailArray=[];
 var passwordArray=[];
 
 function register(){
+    event.preventDefault();
+
     var username = document.getElementById("ru").value;
     var email = document.getElementById("re").value;
     var password = document.getElementById("rp").value;
@@ -59,6 +61,8 @@ function register(){
 }
 
 function login(){
+    event.preventDefault();
+
     var email = document.getElementById("se").value;
     var password = document.getElementById("sp").value;
 
@@ -81,6 +85,7 @@ function login(){
         return ;
     }
     else {
+        event.preventDefault();
         // alert(email + " yor are login Now \n welcome to our website.");
 
         document.getElementById("se").value ="";
